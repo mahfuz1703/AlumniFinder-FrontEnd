@@ -1,0 +1,13 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Lexend:wght@100..900&display=swap');
+
+/* common css start */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* common css end */
+
+.error{
+    text-align: center;
+}
