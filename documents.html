@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alumni Finder | Your Career Assistant</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <style>
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,13 +22,26 @@
     <section class="error">
         <div class="container" style="text-align: center;">
             <h1>------------All Documents-----------</h1>
-            <a href="https://www.figma.com/file/X0XqLNqX0yhtSZ9Fahiu6d/Alumni-Finder?type=design&node-id=0%3A1&mode=dev" target="_blank" class="btn btn-primary">Figma File</a>
-            <a href="https://drive.google.com/drive/folders/1w3wwrOjw9Ym93xpJ6S8pWNHtH7ADsh85?usp=sharing" target="_blank" class="btn btn-primary">Drive</a>
-            <a href="https://www.canva.com/design/DAGEu8_BHfQ/CBTHQdvdUdN-ssb12UyIOQ/edit?utm_content=DAGEu8_BHfQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn btn-primary">Poster</a>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Enter your password" onkeyup="check()" class="pass">
+                <br> <br>
+            </div>
+            <div>
+                <!-- <a href="https://www.figma.com/file/X0XqLNqX0yhtSZ9Fahiu6d/Alumni-Finder?type=design&node-id=0%3A1&mode=dev" target="_blank" > -->
+                    <button class="btn btn-primary button" id="button1" disabled onclick= "window.open('https://www.figma.com/file/X0XqLNqX0yhtSZ9Fahiu6d/Alumni-Finder?type=design&node-id=0%3A1&mode=dev', '_blank')">Figma File</button>
+                <!-- </a> -->
+                <!-- <a href="https://drive.google.com/drive/folders/1w3wwrOjw9Ym93xpJ6S8pWNHtH7ADsh85?usp=sharing" target="_blank"> -->
+                    <button class="btn btn-primary button" id="button2" disabled onclick= "window.open('https://drive.google.com/drive/folders/1w3wwrOjw9Ym93xpJ6S8pWNHtH7ADsh85?usp=sharing', '_blank')">Drive</button>
+                <!-- </a> -->
+                <!-- <a href="https://www.canva.com/design/DAGEu8_BHfQ/CBTHQdvdUdN-ssb12UyIOQ/edit?utm_content=DAGEu8_BHfQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"> -->
+                    <button class="btn btn-primary button" id="button3" disabled onclick= "window.open('https://www.canva.com/design/DAGEu8_BHfQ/CBTHQdvdUdN-ssb12UyIOQ/edit?utm_content=DAGEu8_BHfQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton', '_blank')">Poster</button>
+                <!-- </a> -->
+            </div>
         </div>
     </section>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/documents.js"></script>
 </body>
 
 </html>
